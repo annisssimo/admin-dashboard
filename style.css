@@ -1,6 +1,9 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
 }
 
 .container {
@@ -13,6 +16,26 @@
 .sidebar {
     background-color: rgb(0, 140, 255);
     grid-area: 1 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    padding: 2rem;
+}
+
+.logo {
+    color: white;
+    font-size: 140%;
+    font-weight: 700;
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .header {
