@@ -121,11 +121,11 @@ input[type="search"]:hover {
 
 .welcome img[alt="user-photo"] {
     max-width: 80%;
-    border-radius: 80px;
+    border-radius: 100px;
     grid-area: photo;
 }
 
-.welcome p {
+p {
     margin: 0; 
 }
 
@@ -161,9 +161,10 @@ button {
     background-color: #eef2ff;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: 1fr 2fr / 3fr 1fr;
     padding: 6px 80px 10px 26px;
     grid-template-areas: "proj announ" "proj trend";
+    column-gap: 26px;
 }
 
 h2 {
@@ -177,7 +178,7 @@ h3 {
 .card-container {
     display: grid;
     grid-template: repeat(3, 220px) / repeat(2, 350px);
-    gap: 10px;
+    gap: 20px;
 }
 
 .card {
@@ -198,6 +199,29 @@ h3 {
     grid-area: announ;
 }
 
+.announcements .card p,
+.user p {
+    font-size: 0.8rem;
+}
+
 .trending {
     grid-area: trend;
+}
+
+.trending .card {
+    display: grid;
+    grid-template: repeat(4, 70px) / 120px 200px;
+    padding: 10px 0px;
+}
+
+.trending img {
+    height: 60px;
+    width: auto;
+    border-radius: 80px;
+    align-self: center;
+    justify-self: center;
+}
+
+.trending .caption {
+    align-self: center;
 }
