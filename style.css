@@ -13,7 +13,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1.065fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1.175fr 4fr;
     height: 100vh;
 }
 
@@ -44,8 +44,7 @@ a {
     align-items: center;
     color: white;
     text-decoration: none;
-    margin-top: 8px;
-    margin-bottom: 28px;
+    margin: 8px 0px 29px 0px;
     font-size: 22px;
     letter-spacing: 2px;
 }
@@ -67,21 +66,27 @@ a:hover {
     background-color: rgb(177, 219, 252);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 50% 50%;
-    padding-left: 2.8rem;
-    padding-top: 28px;
+    grid-template: 50% 50% / 2fr 1fr;
+    padding: 30px 0 0 46px;
 }
 
-input[type="search"] {
+label[for="search"] span {
+    font-size: 1.7rem;
+}
+
+.search-bar {
+    display: flex;
+}
+
+input[id="search"] {
     border-radius: 20px;
     border: none;
     width: 672px;
     height: 35px;
+    font-family: inherit;
     position: relative;
     bottom: 5px;
-    font-family: inherit;
-    margin-left: 18px;
+    right: 11px;
 }
 
 input[type="search"]:focus {
