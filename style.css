@@ -162,10 +162,11 @@ button {
     background-color: #eef2ff;
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
-    grid-template: 1fr 2fr / 3fr 1fr;
+    grid-template: 1fr 1.5fr / 3fr 1fr;
     padding: 6px 80px 10px 26px;
     grid-template-areas: "proj announ" "proj trend";
     column-gap: 26px;
+    padding-bottom: 40px;
 }
 
 h2 {
@@ -244,3 +245,4 @@ button:hover {
 .likes-container .material-symbols-outlined:hover {
     color: #4f46e5;
 }
+
